@@ -1,0 +1,52 @@
+.fondo{
+    background-color: black;
+    color: white;
+}
+.tabla-superior {
+    position: relative;
+    z-index: 2; /* Ajusta el índice Z para que sea mayor que el de la clase "titulo" */
+}
+.titulo{
+    position: relative;
+    z-index: 1;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    background: linear-gradient(90deg, 
+    #ff5e00,
+    #ff1100,
+    #ffe600, 
+    #00ff55,
+    #0051ff,
+     #FF0000);
+    background-size: 400%;
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+
+    100%{
+        background-position: 400%;
+    }
+
+}
+.registro{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size:25px;
+ }
+#miEnlace:hover {
+    font-size: 30px;
+	color:red;
+	font-family: 'Press Start 2P', cursive;
+}
+#miEnlace:active {
+	color:red;
+	font-family: 'Press Start 2P', cursive;
+}
